@@ -38,19 +38,19 @@
               <h5 class="titre mt-4">Nos agents prestataires</h5>
               <div class="row mt-5">
                 <div class="col-sm-4 text-center">
-                <img src="/images/agent.png" class="img-fluid rounded-circle test">
+                <img src="/images/Agent.png" class="img-fluid rounded-circle test">
                   <h5 class="mt-3">M.Kobena Kouame lucien</h5>
                   <p>Informaticien et premier Responsable d'agence</p>
                   <p><i>kouame.kobena@uvci.edu.ci</i></p>
                 </div>
                 <div class="col-sm-4 text-center">
-                <img src="/images/agent.png" class="img-fluid rounded-circle test" >
+                <img src="/images/Agent.png" class="img-fluid rounded-circle test" >
                   <h5 class="mt-3">M.Gonye bah Cheick</h5>
                   <p>Archiviste et agent prestataire</p>
                   <p><i>kouame.kobena@uvci.edu.ci</i></p>
                 </div>
                 <div class="col-sm-4 text-center">
-                <img src="/images/agent.png" class="img-fluid rounded-circle test" >
+                <img src="/images/Agent.png" class="img-fluid rounded-circle test" >
                   <h5 class="mt-3">M.Gnanguy Cephas Metuschelah</h5>
                   <p>comptable et agent prestataire</p>
                   <p><i>kouame.kobena@uvci.edu.ci</i></p>
