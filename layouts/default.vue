@@ -23,12 +23,13 @@
                 </li>
                 </ul>
                 <form class="d-flex">
-                <button class="btn btn-outline-success" type="submit">Connexion</button>
+                <button class="btn btn-outline-success" @click="showModal = true">Connexion</button>
                 </form>
             </div>
             </div>
         </nav>
         </header>
+        <!--<Connexion v-show="showModal" />-->
         <Nuxt/>
          <footer class="foot container-fluid">
             <p class="float-end"><a href="#">Back to top</a></p>
@@ -46,3 +47,15 @@
     padding:0;
 }
 </style>
+<script>
+import Connexion from '~/components/Connexion.vue'
+
+export default {
+  components: { Connexion },
+  data() {
+    return {
+      showModal: false,
+    }
+  },
+}
+</script>

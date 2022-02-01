@@ -22,7 +22,7 @@
           <div class="col-md-8">
           <br>
             <h5 class="titre">Informations Detaillées</h5>
-            <h6>Status : <span> En vente</span></h6>
+            <h6>Status : <span> En Location</span></h6>
             <h6>Caution : <span> 500.000 Fr</span></h6>
             <h6>Loyer : <span> 100.000 Fr</span></h6>
             <h6>Prix de vente : <span> Neant</span></h6>

@@ -1,41 +1,30 @@
-<!-- Please remove this file from your project -->
 <template>
  <div class="tout">
    <div class="back">
     <div class="float-end text-center bloc">
         <h2 class="titre">Home_<span class="couleur">CI</span></h2>
-        <p class="para">La platforme numéro 1 en côte d'ivoire <br>qui vous facilite <br>la récherche immobilière.</p>
+        <p>La platforme numéro 1 en côte d'ivoire <br>qui vous facilite <br>la récherche immobilière.</p>
         <button type="button" class="btn btn-outline-warning btn-sm">follow us !:)</button>
     </div>
-  </div>
+   </div>
  <div class="container mt-5">
   <div class="row mt-5" id="annonces">
-    <div class="col-md-3">
-     <p>Pour acceder a plus de contenu vous devez obligatoirement vous connecter</p>
-     <h6 class="mt-2 titre1">Patenaires officiaux</h6>
-     <p>Nos partenaires nous accompagnent dans notre mission qui vise à vous satisfaire </p>
-     <div class="row">
-      <div class="col-md-12 col-sm-4 mt-3 text-center"><a href="https://www.ivoireboutik.ci/" target="_blank"><img src="/images/ivoire.jpg" class="img-fluid rounded-circle test" ></a></div>
-      <div class="col-md-12 col-sm-4 mt-3 text-center"><a href="https://www.uvci.edu.ci/" target="_blank"><img src="/images/uvci.png" class="img-fluid rounded-circle test" ></a></div>
-      <div class="col-md-12 col-sm-4 mt-3 text-center"><a href="https://e-jober.ci/" target="_blank"><img src="/images/jober.png" class="img-fluid rounded-circle test" ></a></div>
-     </div>
-    </div>
     <div class="col-md-9">
       <div class="row" v-for="card in cards"  :key="card.id">
-            <div class="col-lg-4" v-for="title in titles" :key="title.id">
+          <div class="col-lg-4" v-for="title in titles" :key="title.id">
             <br>
               <NuxtLink class="anime" to="/Details">
                 <div class="card">  
-                  <img src="/images/cle.jpg" style=" height: 20rem;" class="img-fluid card-img-top">
-                  <div class="card-body">
+                  <img :src="'/images/'+title.img+'.jpg'" style=" height: 20rem;" class="img-fluid card-img-top">
+                <div class="card-body">
                   <h5 class="card-title">{{title.titre}}</h5>
-                  </div>
+                </div>
                 </div>
               </NuxtLink>
-            </div>
           </div>
+      </div>
           <br>
-              <div class="pagi">
+          <div class="pagi">
                   <nav aria-label="Page navigation example">
                     <ul class="pagination">
                       <li class="page-item">
@@ -53,32 +42,41 @@
                       </li>
                     </ul>
                   </nav>
+          </div>
+    </div>
+     <div class="col-md-3">
+     <br>
+              <p>Pour acceder a plus de contenu vous devez obligatoirement vous connecter</p>
+              <h6 class="mt-2 titre1">Patenaires officiaux</h6>
+              <p>Nos partenaires nous accompagnent dans notre mission qui vise à vous satisfaire </p>
+              <div class="row">
+                <div class="col-md-12 col-sm-4 mt-3 text-center"><a href="https://www.ivoireboutik.ci/" target="_blank"><img src="/images/ivoire.jpg" class="img-fluid rounded-circle test" ></a></div>
+                <div class="col-md-12 col-sm-4 mt-3 text-center"><a href="https://www.uvci.edu.ci/" target="_blank"><img src="/images/uvci.png" class="img-fluid rounded-circle test" ></a></div>
+                <div class="col-md-12 col-sm-4 mt-3 text-center"><a href="https://e-jober.ci/" target="_blank"><img src="/images/jober.png" class="img-fluid rounded-circle test" ></a></div>
               </div>
-        </div>
-       </div>
-       <br>
+      </div>
+  </div>
+  <br>
        <h4 class="titre1">Notre zone de couverture</h4>
        <p class="text-justify">Nos Agences ne couvrent que l'entièreté de ses villes pour l'instant. Toutefois nous visons a nous etendre sur toute l'étendu du territoire à l'horizon 2023</p>
-    </div>
+  </div>
     <div class="marg row">
-        <div class="row">
-          <div class="col-sm-4  text-center"><p>Abidjan</p></div>
-          <div class="col-sm-4  text-end"><p>San-pedro</p></div>
-          <div class="col-sm-4 text-center"><p>Bouake</p></div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4  text-start"><p>Bondoukou</p></div>
-          <div class="col-sm-4 text-center"><p>Soubre</p></div>
-          <div class="col-sm-4 text-end"><p>Man</p></div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4 text-center"><p>Facobly</p></div>
-          <div class="col-sm-4 text-start"><p>Abengourou</p></div>
-          <div class="col-sm-4 text-center"><p>Yamoussoukro</p></div>
-        </div>
+            <div class="row">
+              <div class="col-sm-4  text-center"><p>Abidjan</p></div>
+              <div class="col-sm-4  text-end"><p>San-pedro</p></div>
+              <div class="col-sm-4 text-center"><p>Bouake</p></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4  text-start"><p>Bondoukou</p></div>
+              <div class="col-sm-4 text-center"><p>Soubre</p></div>
+              <div class="col-sm-4 text-end"><p>Man</p></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4 text-center"><p>Facobly</p></div>
+              <div class="col-sm-4 text-start"><p>Abengourou</p></div>
+              <div class="col-sm-4 text-center"><p>Yamoussoukro</p></div>
+            </div>
     </div>
-  </div>
-  </div>
 </div>
 </template>
 <script>
@@ -92,12 +90,30 @@ export default {
       },
     ],
     titles:[
-      { titre:'Abobo-sogefia'},
-      { titre:'Yopougon-Maroc'},
-      { titre:'Koumassi-Divo'},
-      { titre:'Bardot_san-pedro'},
-      { titre:'Sicogi-marché'},
-      { titre:'Cité Ado Abobo'},
+      { 
+        titre:'Abobo-sogefia',
+        img:'inter'
+      },
+      { 
+        titre:'Yopougon-Maroc',
+        img:'1'
+      },
+      { 
+        titre:'Koumassi-Divo',
+        img:'2'
+      },
+      { 
+        titre:'Bardot_san-pedro',
+        img:'3'
+      },
+      { 
+        titre:'Sicogi-marché',
+        img:'4'
+      },
+      { 
+        titre:'Cité Ado Abobo',
+        img:'5'
+      },
     ]
    }
   }
@@ -113,6 +129,7 @@ export default {
 }
 .tout{
   font-family:times, sans-serif;
+  overflow-x:hidden;
 }
 .test{
     height:8rem;
@@ -166,7 +183,7 @@ export default {
   position:absolute;
   top:13rem;
   color:white;
-  margin-left:-1rem;
+  margin-left:-0.9rem;
   background-color:orange;
   height:1.9rem;
   padding-left:1.5rem;
