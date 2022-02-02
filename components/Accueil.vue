@@ -14,10 +14,10 @@
           <div class="col-lg-4" v-for="title in titles" :key="title.id">
             <br>
               <NuxtLink class="anime" to="/Details">
-                <div class="card">  
+                <div class="card fadeSlideFrom" id="card">  
                   <img :src="'/images/'+title.img+'.jpg'" style=" height: 20rem;" class="img-fluid card-img-top">
                 <div class="card-body">
-                  <h5 class="card-title">{{title.titre}}</h5>
+                  <h5  class="card-title" id="titre">{{title.titre}}</h5>
                 </div>
                 </div>
               </NuxtLink>
@@ -44,7 +44,7 @@
                   </nav>
           </div>
     </div>
-     <div class="col-md-3">
+     <div class="col-md-3 other">
      <br>
               <p>Pour acceder a plus de contenu vous devez obligatoirement vous connecter</p>
               <h6 class="mt-2 titre1">Patenaires officiaux</h6>
@@ -62,19 +62,19 @@
   </div>
     <div class="marg row">
             <div class="row">
-              <div class="col-sm-4  text-center"><p>Abidjan</p></div>
-              <div class="col-sm-4  text-end"><p>San-pedro</p></div>
-              <div class="col-sm-4 text-center"><p>Bouake</p></div>
+              <div class="col-sm-4  text-center"><p class="loca">Abidjan</p></div>
+              <div class="col-sm-4  text-end"><p class="loca">San-pedro</p></div>
+              <div class="col-sm-4 text-center"><p class="loca">Bouake</p></div>
             </div>
             <div class="row">
-              <div class="col-sm-4  text-start"><p>Bondoukou</p></div>
-              <div class="col-sm-4 text-center"><p>Soubre</p></div>
-              <div class="col-sm-4 text-end"><p>Man</p></div>
+              <div class="col-sm-4  text-start"><p class="loca">Bondoukou</p></div>
+              <div class="col-sm-4 text-center"><p class="loca">Soubre</p></div>
+              <div class="col-sm-4 text-end"><p class="loca">Man</p></div>
             </div>
             <div class="row">
-              <div class="col-sm-4 text-center"><p>Facobly</p></div>
-              <div class="col-sm-4 text-start"><p>Abengourou</p></div>
-              <div class="col-sm-4 text-center"><p>Yamoussoukro</p></div>
+              <div class="col-sm-4 text-center"><p class="loca">Facobly</p></div>
+              <div class="col-sm-4 text-start"><p class="loca">Abengourou</p></div>
+              <div class="col-sm-4 text-center"><p class="loca">Yamoussoukro</p></div>
             </div>
     </div>
 </div>

@@ -22,7 +22,23 @@ export default {
        {
          src:'js/bootstrap.js',
          body: true
-       }
+       },
+       {
+        src:'js/gsap.min.js',
+        body: true
+      },
+      {
+        src:'js/ScrollTrigger.min.js',
+        body: true
+      },
+      {
+        src:'js/ScrollToPlugin.min.js',
+        body: true
+      },
+      {
+        src:'js/script.js',
+        body: true
+      }
     ]
   },
 
