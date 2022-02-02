@@ -96,6 +96,17 @@ const slideFromBottom = (elem, delay, duration)=>{
    slideInTop(".bloc");
    slideInTop("#titre");
    slideFromRigth(".other");
-   slideFromBottom(".marg")
+   slideFromBottom(".marg");
+   slideInTop(".naiss");
+   slideFromBottom(".servi");
+   slideFromLeft("#para1");
+   slideFromRigth("#para2");
+   slideFromLeft(".etape");
+   slideFromBottom(".items");
+   slideFromBottom(".agent");
+   slideFromRigth("#image");
+   slideFromLeft(".info");
+   slideFromLeft(".contact");
+   slideFromRigth(".infocontac");
 
 }

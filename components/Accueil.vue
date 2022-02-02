@@ -1,6 +1,7 @@
 <template>
  <div class="tout">
-   <div class="back">
+   <div class="">
+   <img src="/images/cle.jpg" class="img-fluid" >
     <div class="float-end text-center bloc">
         <h2 class="titre">Home_<span class="couleur">CI</span></h2>
         <p>La platforme numéro 1 en côte d'ivoire <br>qui vous facilite <br>la récherche immobilière.</p>
@@ -166,9 +167,10 @@ export default {
   font-family:times, sans-serif;
 }
 .bloc{
-  margin-top:15vw;
+  /*position:absolute;*/
+  margin-top: -38vw;
   color:white;
-  font-size:2vw;
+  font-size:2.8vw;
   padding:1vw;
 }
 .couleur{

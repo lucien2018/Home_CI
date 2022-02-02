@@ -5,9 +5,10 @@
                 </div>
             </div>
 		<div class="container mt-5">
-		<h3 class="titre">Contact</h3>
-			<div class="row">
+		  <div class="row">
 				<div class="col-md-8">
+				<div class="contact">
+					<h3 class="titre">Contact</h3>
 					<form action="#">
 						<div class="row form-group">
 							<div class="col-md-6">
@@ -44,11 +45,11 @@
 						<div class="form-group">
 							<input type="submit" value="Envoyer" class="btn btn-warning">
 						</div>
-
-					</form>		
+					</form>	
+					</div>	
 				</div>
 				<div class="col-md-4">
-					<div class="mt-3">
+					<div class="mt-3 infocontac">
 						<h6 class="titre">Nos contacts</h6>
 						<div class="row">
 						 <div class="col-xl-12 col-sm-4">tel: +2250748608703</div>
@@ -60,7 +61,6 @@
 
 				</div>
 			</div>
-			
 		</div>
 	</div>
 </template>
