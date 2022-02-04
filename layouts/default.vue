@@ -2,7 +2,7 @@
 <div class="body">
         <header>
         <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-warning">
-            <div class="container-fluid">
+            <div class="container">
             <a class="navbar-brand" href="#">Home_CI</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -22,9 +22,6 @@
                     <NuxtLink class="nav-link" to="/contact">Contact</NuxtLink>
                 </li>
                 </ul>
-                <form class="d-flex">
-                <button class="btn btn-outline-success" @click="showModal = true">Connexion</button>
-                </form>
             </div>
             </div>
         </nav>

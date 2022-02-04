@@ -23,7 +23,7 @@ export default {
          src:'js/bootstrap.js',
          body: true
        },
-       {
+       /*{
         src:'js/gsap.min.js',
         body: true
       },
@@ -38,7 +38,7 @@ export default {
       {
         src:'js/script.js',
         body: true
-      }
+      }*/
     ]
   },
 
@@ -57,7 +57,15 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    'nuxt-gsap-module'
   ],
+  
+  gsap: {
+    extraPlugins: {
+      scrollTo: true,
+      scrollTrigger: true
+    }
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [

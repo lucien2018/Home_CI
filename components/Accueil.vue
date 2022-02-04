@@ -82,7 +82,7 @@
 </template>
 <script>
 export default {
-
+  
   data: function(){
    return{
     cards:[
@@ -117,9 +117,124 @@ export default {
       },
     ]
    }
+  },
+  mounted(){
+   this.animateOnScroll(".bloc"),
+   this.animateOnScroll("#titre"),
+   this.animateOnScrollfromRigth("#card")
+   this.animateOnScrollfromLeft(".other")
+   this. animateOnScrollfromBottom(".marg")
+  },
+  methods:{
+
+     animateOnScroll(elem, delay, duration) {
+      
+      this.$gsap.fromTo(elem,  
+           {
+               opacity:0,
+               y:-200,
+               delay: delay||1,
+               duration: duration||2,
+           },
+           {
+              opacity:1,
+              y:0,
+              delay: delay||1,
+              duration: duration||2,
+              ease: 'Power1.easeInOut',
+              scrollTrigger: {
+                trigger: elem,
+                start:"top center",
+                pin: false,
+                end: "bottom center",
+                scrub: false
+              },
+           }
+      )
+      //this.$gsap.to(window, { duration: 5, scrollTo:880 })
+    },
+    animateOnScrollfromRigth(elem, delay, duration) {
+      
+      this.$gsap.fromTo(elem,  
+           {
+               opacity:0,
+               x:-200,
+               delay: delay||1,
+               duration: duration||2,
+           },
+           {
+              opacity:1,
+              x:0,
+              delay: delay||1,
+              duration: duration||2,
+              ease: 'Power1.easeInOut',
+              scrollTrigger: {
+                trigger: elem,
+                start:"top center",
+                pin: false,
+                end: "bottom center",
+                scrub: false
+              },
+           }
+      )
+      //this.$gsap.to(window, { duration: 2, scrollTo:1000 })
+    },
+     animateOnScrollfromLeft(elem, delay, duration) {
+      
+      this.$gsap.fromTo(elem,  
+           {
+               opacity:0,
+               x:200,
+               duration: duration||0.5,
+           },
+           {
+              opacity:1,
+              x:0,
+              delay: delay||0.7,
+              duration: duration||1.5,
+              ease: 'Power1.easeInOut',
+              scrollTrigger: {
+                trigger: elem,
+                start:"top center",
+                pin: false,
+                end: "bottom center",
+                scrub: false
+              },
+           }
+      )
+      //this.$gsap.to(window, { duration: 2, scrollTo:1000 })
+    },
+       animateOnScrollfromBottom(elem, delay, duration) {
+      
+      this.$gsap.fromTo(elem,  
+           {
+               opacity:0,
+               x:80,
+               duration: duration||1,
+           },
+           {
+              opacity:1,
+              x:0,
+              delay: delay||1,
+              duration: duration||2,
+              ease: 'Power1.easeInOut',
+              scrollTrigger: {
+                trigger: elem,
+                start:"top center",
+                pin: false,
+                end: "bottom center",
+                scrub: false
+              },
+           }
+      )
+      //this.$gsap.to(window, { duration: 2, scrollTo:1000 })
+    }
+
   }
+
 }
 </script>
+
 <style scoped>
 .back{
   background:url("/images/cle.jpg");

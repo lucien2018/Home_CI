@@ -12,32 +12,32 @@
 					<form action="#">
 						<div class="row form-group">
 							<div class="col-md-6">
-								<label for="fname">Nom</label>
+								<label id="label" for="fname">Nom</label>
 								<input type="text" id="fname" class="form-control" placeholder="votre nom">
 							</div>
 							<div class="col-md-6">
-								<label for="lname">Prenom</label>
+								<label id="label" for="lname">Prenom</label>
 								<input type="text" id="lname" class="form-control" placeholder="votre prenom">
 							</div>
 						</div>
 
 						<div class="row form-group">
 							<div class="col-md-12">
-								<label for="email">Email</label>
+								<label id="label" for="email">Email</label>
 								<input type="text" id="email" class="form-control" placeholder="votre asresse email">
 							</div>
 						</div>
 
 						<div class="row form-group">
 							<div class="col-md-12">
-								<label for="subject">Sujet</label>
+								<label id="label" for="subject">Sujet</label>
 								<input type="text" id="subject" class="form-control" placeholder="votre sujet">
 							</div>
 						</div>
 
 						<div class="row form-group">
 							<div class="col-md-12">
-								<label for="message">Message</label>
+								<label id="label" for="message">Message</label>
 								<textarea name="message" id="message" cols="10" rows="5" class="form-control" placeholder="ecrivez nous votre message"></textarea>
 							</div>
 						</div>
@@ -66,6 +66,117 @@
 </template>
 <script>
 export default {
+	 mounted(){
+   this.animateOnScroll("#label"),
+   this.animateOnScrollfromRigth(".contact")
+   this.animateOnScrollfromLeft(".infocontac")
+   this. animateOnScrollfromBottom(".marg")
+  },
+  methods:{
+	  animateOnScroll(elem, delay, duration) {
+      
+      this.$gsap.fromTo(elem,  
+           {
+               opacity:0,
+               y:-200,
+               delay: delay||1,
+               duration: duration||2,
+           },
+           {
+              opacity:1,
+              y:0,
+              delay: delay||1,
+              duration: duration||2,
+              ease: 'Power1.easeInOut',
+              scrollTrigger: {
+                trigger: elem,
+                start:"top center",
+                pin: false,
+                end: "bottom center",
+                scrub: false
+              },
+           }
+      )
+      //this.$gsap.to(window, { duration: 5, scrollTo:880 })
+    },
+    animateOnScrollfromRigth(elem, delay, duration) {
+      
+      this.$gsap.fromTo(elem,  
+           {
+               opacity:0,
+               x:-200,
+               delay: delay||1,
+               duration: duration||2,
+           },
+           {
+              opacity:1,
+              x:0,
+              delay: delay||1,
+              duration: duration||2,
+              ease: 'Power1.easeInOut',
+              scrollTrigger: {
+                trigger: elem,
+                start:"top center",
+                pin: false,
+                end: "bottom center",
+                scrub: false
+              },
+           }
+      )
+      //this.$gsap.to(window, { duration: 2, scrollTo:1000 })
+    },
+     animateOnScrollfromLeft(elem, delay, duration) {
+      
+      this.$gsap.fromTo(elem,  
+           {
+               opacity:0,
+               x:200,
+               duration: duration||0.5,
+           },
+           {
+              opacity:1,
+              x:0,
+              delay: delay||0.7,
+              duration: duration||1.5,
+              ease: 'Power1.easeInOut',
+              scrollTrigger: {
+                trigger: elem,
+                start:"top center",
+                pin: false,
+                end: "bottom center",
+                scrub: false
+              },
+           }
+      )
+      //this.$gsap.to(window, { duration: 2, scrollTo:1000 })
+    },
+       animateOnScrollfromBottom(elem, delay, duration) {
+      
+      this.$gsap.fromTo(elem,  
+           {
+               opacity:0,
+               x:80,
+               duration: duration||1,
+           },
+           {
+              opacity:1,
+              x:0,
+              delay: delay||1,
+              duration: duration||2,
+              ease: 'Power1.easeInOut',
+              scrollTrigger: {
+                trigger: elem,
+                start:"top center",
+                pin: false,
+                end: "bottom center",
+                scrub: false
+              },
+           }
+      )
+      //this.$gsap.to(window, { duration: 2, scrollTo:1000 })
+    }
+
+  }
 
 }
 </script>
