@@ -44,14 +44,13 @@
     padding:0;
 }
 </style>
-<script>
-import Connexion from '~/components/Connexion.vue'
 
+<script>
 export default {
-  components: { Connexion },
+
   data() {
     return {
-      showModal: false,
+      
     }
   },
 }

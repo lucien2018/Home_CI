@@ -4,28 +4,28 @@
     <div class="modale card">
         <div @click="toggleModale" class="btn-modal btn btn-danger">X</div>
         <form class="row g-3">
-            <div class="col-6 col-md-3">
+            <div class="col-12 col-md-6">
                 <label for="inputEmail4" class="form-label">Nom</label>
                 <input type="text" class="form-control" id="inputEmail4">
             </div>
-            <div class="col-6 col-md-3">
+            <div class="col-12 col-md-6">
                 <label for="inputPassword4" class="form-label">Prenom</label>
                 <input type="text" class="form-control" id="inputPassword4">
             </div>
-            <div class="col-6 col-3">
+            <div class="col-12 col-md-6">
                 <label for="inputAddress" class="form-label">Intitulé de l'annonce</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                <input type="text" class="form-control" id="inputAddress" placeholder="Abobo Sagbê">
             </div>
-            <div class="col-6 col-3">
+            <div class="col-12 col-md-6">
                 <label for="inputAddress2" class="form-label">Numéro de téléphone</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                <input type="tel" class="form-control" id="inputAddress2" placeholder="0700000000">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-12">
                 <label for="inputCity" class="form-label">Date de rendez-vous</label>
-                <input type="text" class="form-control" id="inputCity">
+                <input type="date" class="form-control" id="inputCity">
             </div>
-            <div class="col-6">
-                <button type="submit" class="btn btn-primary">Sign in</button>
+            <div class="col-12">
+                <button type="submit" class="btn btn-warning">Envoyer</button>
             </div>
             </form>
     </div>
@@ -64,6 +64,7 @@ background:#ffff;
 color:#333;
 padding:50px;
 position:fixed;
+width: 75%;
 }
 .btn-modal{
     position:absolute;
