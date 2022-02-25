@@ -63,19 +63,16 @@
   </div>
     <div class="marg row">
             <div class="row">
-              <div class="col-sm-4  text-center"><p class="loca">Abidjan</p></div>
-              <div class="col-sm-4  text-end"><p class="loca">San-pedro</p></div>
-              <div class="col-sm-4 text-center"><p class="loca">Bouake</p></div>
+              <div class="col-sm-6  text-center"><p class="loca">Abidjan</p></div>
+              <div class="col-sm-6  text-center"><p class="loca">San-pedro</p></div>
             </div>
             <div class="row">
-              <div class="col-sm-4  text-start"><p class="loca">Bondoukou</p></div>
-              <div class="col-sm-4 text-center"><p class="loca">Soubre</p></div>
-              <div class="col-sm-4 text-end"><p class="loca">Man</p></div>
+              <div class="col-sm-6 text-start"><p class="loca">Soubre</p></div>
+              <div class="col-sm-6 text-end"><p class="loca">Man</p></div>
             </div>
             <div class="row">
-              <div class="col-sm-4 text-center"><p class="loca">Facobly</p></div>
-              <div class="col-sm-4 text-start"><p class="loca">Abengourou</p></div>
-              <div class="col-sm-4 text-center"><p class="loca">Yamoussoukro</p></div>
+              <div class="col-sm-6 text-center"><p class="loca">Facobly</p></div>
+              <div class="col-sm-6 text-center"><p class="loca">Yamoussoukro</p></div>
             </div>
     </div>
 </div>

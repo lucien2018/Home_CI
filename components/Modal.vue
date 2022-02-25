@@ -65,6 +65,7 @@ color:#333;
 padding:50px;
 position:fixed;
 width: 75%;
+height:75%;
 }
 .btn-modal{
     position:absolute;

@@ -136,7 +136,7 @@ export default {
            {
               opacity:1,
               x:0,
-              delay: delay||0.7,
+              delay: delay||0.5,
               duration: duration||1.5,
               ease: 'Power1.easeInOut',
               scrollTrigger: {
@@ -183,7 +183,7 @@ export default {
 <style>
 
 .back{
-  margin-top:3rem;
+  margin-top:0rem;
   background:url("/images/contact.jpg");
   height:45vw;
   background-size:100%;
@@ -195,6 +195,7 @@ export default {
 	margin-bottom:30px;
 	font-family: times sans-serif;
 	font-size:15px;
+  overflow-x:hidden;
 }
 .titre{
     margin-bottom:20px;
